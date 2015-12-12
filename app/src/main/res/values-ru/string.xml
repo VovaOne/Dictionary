@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Словарь</string>
+    <string name="action_settings">Настройки</string>
+    <string name="input_word">Введите слово</string>
+    <string name="input_translate">Введите перевод</string>
+    <string name="tab_learning_words">Запоминание</string>
+    <string name="tab_all_words">Все слова</string>
+    <string name="search">Поиск</string>
+    <string name="on_of_notification">Уведомления</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Закрыть</string>
+    <string name="edit">Редактировать</string>
+    <string name="card_added">Слово добавленно</string>
+</resources>

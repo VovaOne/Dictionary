@@ -14,7 +14,7 @@
         android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <Switch
+    <android.support.v7.widget.SwitchCompat
         android:id="@+id/start_stop_service_switch"
         android:layout_width="match_parent"
         android:layout_height="200dp"

@@ -17,6 +17,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
+import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
         View header = navigationView.getHeaderView(0);
-        Switch serviceSwitch = (Switch) header.findViewById(R.id.start_stop_service_switch);
+        SwitchCompat serviceSwitch = (SwitchCompat) header.findViewById(R.id.start_stop_service_switch);
         serviceSwitch.setChecked(notificationSwitchPosition);
 
         serviceSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

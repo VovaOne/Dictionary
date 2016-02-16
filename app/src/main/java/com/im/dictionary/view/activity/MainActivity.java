@@ -91,14 +91,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initSwitchService() {
 
-        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
-        boolean notificationSwitchPosition = sharedPref.getBoolean(SERVICE_POWER_MODE_SHARED_PREFERENCE_PROPERTY, true);
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
         View header = navigationView.getHeaderView(0);
-        Switch serviceSwitch = (Switch) header.findViewById(R.id.start_stop_service_switch);
-        serviceSwitch.setChecked(notificationSwitchPosition);
 
+        Switch serviceSwitch = (Switch) header.findViewById(R.id.start_stop_service_switch);
         serviceSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

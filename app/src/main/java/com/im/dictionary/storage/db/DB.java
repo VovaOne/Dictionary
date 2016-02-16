@@ -9,7 +9,7 @@ import com.im.dictionary.App;
 public class DB extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "MyDBName.db";
-    public static final int VERSION = 4;
+    public static final int VERSION = 1;
 
     public static final String[] ALL_COLUMNS = null;
     public static final String NOT_GROUPED = null;

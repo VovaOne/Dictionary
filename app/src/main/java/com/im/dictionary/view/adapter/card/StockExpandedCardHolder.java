@@ -24,7 +24,7 @@ public class StockExpandedCardHolder extends ExpandedCardHolder {
         moveToLearningImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                model.type = Card.Type.STOCK;
+                model.type = Card.Type.LEARNING;
                 CARD_DAO_INSTANCE.update(model);
                 if (cardDeletedCallback != null) cardDeletedCallback.apply(position);
             }

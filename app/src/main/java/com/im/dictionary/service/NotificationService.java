@@ -39,6 +39,13 @@ public class NotificationService extends Service {
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mMyTimerTask.cancel();
+        mTimer.cancel();
+    }
+
+    @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
@@ -63,7 +70,7 @@ public class NotificationService extends Service {
             List<Card> cards = DB.CARD_DAO_INSTANCE.getAllCards();
             if (cards.isEmpty()) return null;
             int randMin = 0;
-            int randMax = cards.size()-1;
+            int randMax = cards.size() - 1;
 
             Random r = new Random();
             int rand = r.nextInt(randMax - randMin + 1) + randMin;

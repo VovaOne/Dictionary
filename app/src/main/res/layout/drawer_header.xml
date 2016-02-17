@@ -17,9 +17,10 @@
     <android.support.v7.widget.SwitchCompat
         android:id="@+id/start_stop_service_switch"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="50dp"
         android:gravity="center_horizontal"
-        android:paddingTop="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
         android:text="@string/on_of_notification" />
 
 </LinearLayout>
